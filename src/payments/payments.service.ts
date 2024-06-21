@@ -64,16 +64,13 @@ export class PaymentsService {
         // Then define and call a function to handle the event payment_intent.succeeded
         console.log({
           metadata: chargeIntentSucceeded.metadata,
-        })
+        });
         break;
       // ... handle other event types
       default:
         console.log(`Unhandled event type ${event.type}`);
-        
     }
 
-
     return response.status(200);
-
   }
 }
