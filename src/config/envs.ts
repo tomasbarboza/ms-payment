@@ -15,7 +15,7 @@ const envVarsSchema = joi
     STRIPE_SECRET: joi.string().required(),
     STRIPE_SUCCESS_URL: joi.string().required(),
     STRIPE_CANCEL_URL: joi.string().required(),
-    STRIPE_ENDPOINT_SECRET: joi.string,
+    STRIPE_ENDPOINT_SECRET: joi.string().required(),
   })
   .unknown(true);
 
